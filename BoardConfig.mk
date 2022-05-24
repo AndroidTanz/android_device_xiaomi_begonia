@@ -68,6 +68,10 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_CUSTOM_DTBOIMG_MK := $(DEVICE_PATH)/dtbo/dtbo.mk
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_begonia
+TARGET_RECOVERY_DEVICE_MODULES := libinit_begonia
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := begonia,begoniain
 
