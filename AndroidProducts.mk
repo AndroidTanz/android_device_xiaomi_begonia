@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2020 The PixelExperience Project
+# Copyright (C) 2022 The #keepqassa Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_begonia.mk
+    $(LOCAL_DIR)/qassa_begonia.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_begonia-user \
-    nad_begonia-userdebug \
-    nad_begonia-eng
+    qassa_begonia-user \
+    qassa_begonia-userdebug \
+    qassa_begonia-eng

@@ -17,21 +17,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from begonia device makefile
 $(call inherit-product, device/xiaomi/begonia/device.mk)
 
-# Inherit some common Nusantara stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
-USE_GAPPS := true
+# Inherit some common QASSA stuff
+$(call inherit-product, vendor/qassa/config/common_full_phone.mk)
+
+# Qassa Flags
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_USES_AOSP_RECOVERY := false
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot Animation
-TARGET_SCREEN_HEIGHT := 2340
-TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
-PRODUCT_NAME := nad_begonia
+PRODUCT_NAME := qassa_begonia
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := Xiaomi
 
