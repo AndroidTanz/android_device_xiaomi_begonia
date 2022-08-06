@@ -1204,9 +1204,6 @@ vendor/etc/init/android.hardware.neuralnetworks@1.1-service-neuron-ann.rc
 # Power (Hardware)
 vendor/bin/hw/power_legacy_test_v_1_0
 vendor/bin/hw/power_native_test_v_1_0
-vendor/etc/power_whitelist_cfg.xml
-vendor/etc/powercontable.xml
-vendor/etc/powerscntbl.xml
 vendor/lib/hw/power.default.so
 vendor/lib/hw/power.mt6785.so
 vendor/lib64/hw/power.default.so
