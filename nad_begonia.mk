@@ -19,7 +19,10 @@ $(call inherit-product, device/xiaomi/begonia/device.mk)
 
 # Inherit some common Nusantara stuff.
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+
+# Custom Rom Flags
 USE_GAPPS := true
+TARGET_USES_AOSP_RECOVERY := false
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
